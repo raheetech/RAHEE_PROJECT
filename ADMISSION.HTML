@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GFG- Store Data</title>
+<style>
+p {
+ font-weight:bold;
+}
+body {
+   min-height: 100%;
+   background-image: url(ash.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+</style>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["Address"].value;
+var y = document.forms["myForm"]["Name"].value;
+var z = document.forms["myForm"]["Address_Present"].value;
+var w = document.forms["myForm"]["Telephone_No"].value;
+var x1 = document.forms["myForm"]["Course_Title"].value;
+var y1 = document.forms["myForm"]["Batch_No"].value;
+var z1 = document.forms["myForm"]["Date_of_Birth"].value;
+var w1 = document.forms["myForm"]["Signature_of_the_Applicant"].value;
+var x2 = document.forms["myForm"]["Date"].value;
+var y2 = document.forms["myForm"]["Education_Qualification"].value;
+var z2 = document.forms["myForm"]["Registration_No"].value;
+ if (z2 == "") {
+    alert("Registration No must be filled out");
+    return false;
+  } 
+else if (x == "") {
+    alert("Address(Center) must be filled out");
+    return false;
+  }
+else if (y==""){
+    alert("Name must be filled out");
+    return false;
+}
+else if (z==""){
+    alert("Address Present must be filled out");
+    return false;
+}
+else if (w==""){
+    alert("Telephone No must be filled out or Invalid");
+    return false;
+}
+else if (x1 == "") {
+    alert("Course_Title must be filled out");
+    return false;
+  }
+else if (y1==""){
+    alert("Batch_No must be filled out");
+    return false;
+}
+else if (z1==""){
+    alert("Date_of_Birth must be filled out");
+    return false;
+}
+else if (w1==""){
+    alert("Signature_of_the_Applicant must be filled out");
+    return false;
+}
+else if (x2==""){
+    alert("Date must be filled out");
+    return false;
+}
+else if (y2==""){
+    alert("Education_Qualification must be filled out");
+    return false;
+}
+else
+{
+ alert("THANK U");
+}
+}
+
+</script>
+
+</head>
+<body>
+<form name="myForm" form action="insert.php" method="post" onsubmit="return validateForm()" required>
+<bodybackground="ash.jpeg" >
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+</script>
+
+<Table style="width:100%" border=4 >
+  <tr>
+	<td>
+<p align=right style="background-color:black; color:white;`"><A HREF="index.HTML"><img src="OIP.JPEG" height="30" width="30"></A><br> <bold>Home</style></bold></p>
+<p style=" font-weight:bold;">Registration No: WBEIDCL/WILTRN/</p>
+       <input type="radio" name="Registration_No" value="WBEIDCL"> WBEIDCL <br>  
+  <input type="radio" name="Registration_No" value="WILTRN"> WILTRN <br>  
+	<center>
+		<p style= "background-color: black;color:white ;font-size:40px;font-weight:bold;">Webel Computer Training Center</p>
+		
+			
+<p >
+			<label for="Address">Address(Institute)*:</label>
+			<input type="text"  onfocusin="myFunction(this)"  name="Address" id="Address" style="width:1250px;height:45px">
+			</p>	
+</Td>
+</tr>
+</table>
+	
+<p align=center style= "background-color: black;color:white ;font-size:40px;font-weight:bold;">Admission Form for Education & Training</p>
+
+<Table style="width:100%" border=4 CellPadding = "2" CellSpacing= "2">
+  <tr>
+	<td>		
+<p>
+			<label for="Course_Title">Course Title*:</label>
+			<input type="text" name="Course_Title" id="Course_Title" style="width:1250px;height:20px">
+			</p>
+
+			
+<p>
+                  <label for="Duration">Duration(hrs):</label>
+			<input type="number" name="Duration" id="Duration" style="width:590px;height:20px">
+			<label for="Batch_No">Batch No*:</label>
+			<input type="text" name="Batch_No" id="Batch_No" style="width:630px;height:20px">
+			</p></TD>
+</tr>
+</table>
+			
+<p>
+			<label for="Name">Name(in full)*:</label>
+			<input type="text" name="Name" id="Name" style="width:1285px;height:20px">
+			</p>
+<p>
+			<label for="Address_Present">Address Present*:</label>
+			<input type="text" name="Address_Present" id="Address_Present"  style="width:1268px;height:40px">
+                  
+			</p>
+<p>
+			<label for="Permanent">Permanent:</label>
+			<input type="text" name="Permanent" id="Permanent"  style="width:1302px;height:40px">
+                  
+			</p>
+<p>
+			<label for="Father's/Husband's_Name">Father's/Husband's Name:</label>
+			<input type="text" name="Father's/Husband's_Name" id="Father's/Husband's_Name"  style="width:1200px; height:20px">
+                  
+			</p>
+			
+<p>
+                  <label for="Date_of_Birth">Date of Birth*:</label>
+			<input type="date" name="Date_of_Birth" id="Date_of_Birth" style="width:580px;height:20px">
+			<label for="Telephone_No">Telephone No*:</label>
+			<input type="number" name="Telephone_No" id="Telephone_No" style="width:640px;height:20px">
+			</p>
+
+	<p>
+			<label for="Education_Qualification">Education Qualification*:</label>
+			<input type="text" name="Education_Qualification" id="Education_Qualification"  style="width:1220px; height:20px">
+                  
+			</p>
+<p>
+			<label for="Exposure_to_Computers">Exposure to Computers:</label>
+			<input type="text" name="Exposure_to_Computers" id="Exposure_to_Computers"  style="width:1220px; height:40px">
+                  
+			</p>
+<p>
+			<label for="Work_Experience">Work Experience:</label>
+			<input type="text" name="Work_Experience" id="Work_Experience"  style="width:1260px; height:40px">
+                  
+			</p>		
+<p>
+			<label for="Date">Date(Today)*:</label>
+			<input type="date" name="Date" id="Date" style="width:200px;height:40px"></p>
+
+<p align="right">
+                   <label for="Signature_of_the_Applicant">Signature of th Applicant*:</label>
+			<input type="file" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" name="Signature_of_the_Applicant" id="Signature_of_the_Applicant" style="width:200px;height:40px">
+			</p>
+
+<p align="center">
+                   <input type="submit" name="SubmitButton" value="Submit Form" onClick="empty()">
+			<input type="Reset" value="Reset"></p>
+		</form>
+	</center>
+</body>
+</html>
